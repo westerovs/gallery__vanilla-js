@@ -83,7 +83,7 @@ body {
 
 .gallery__main-content {
     outline: 2px dashed red;
-    display: flex;
+    display: none;
     justify-content: space-between;
 }
 
@@ -209,4 +209,16 @@ body {
     text-align: center;
     letter-spacing: 0.05em;
     color: #606060;
+}
+
+/* ==================================== */
+/* ======== классы для скрытия ======== */
+/* ==================================== */
+.gallery__main-content.is-active {
+    display: flex;
+}
+
+.gallery__card-item.is-active {
+    outline: 4px dashed red;
+    /*display: none;*/
 }
