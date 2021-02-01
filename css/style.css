@@ -107,7 +107,6 @@ body {
 /* ==================================== */
 
 .gallery__slider {
-    outline: 2px dashed red;
     width: 750px;
 }
 
@@ -231,5 +230,5 @@ body {
 
 .gallery__card-item.is-active {
     outline: 4px dashed red;
-    /*display: none;*/
+    display: none;
 }
