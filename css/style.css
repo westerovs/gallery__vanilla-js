@@ -71,7 +71,7 @@ body {
 .gallery-container {
     position: relative;
     margin-top: 150px;
-    width: 1400px;
+    width: 1362px;
     min-height: 400px;
     outline: 2px dashed gold;
 }
@@ -107,7 +107,14 @@ body {
 .gallery__slider {
     outline: 2px dashed red;
     width: 750px;
-    height: 495px;
+}
+
+.gallery__slider-desc {
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #606060;
 }
 
 /* ==================================== */
@@ -163,26 +170,43 @@ body {
     align-items: center;
 }
 
+.gallery__qr-text {
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #141414;
+}
+
 /* ==================================== */
-/* ======== нижний блок slider ======== */
+/* ======== нижний блок card ========== */
 /* ==================================== */
 .gallery__card {
+    padding-left: 168px;
     background: gray;
 }
 
 .gallery__card-list {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 38px;
 }
 
 .gallery__card-item {
     width: 355px;
     min-height: 105px;
-    background: blue;
 
 }
 
 .gallery__card-img {
     outline: 2px solid black;
     object-fit: cover;
+}
+
+.gallery__card-text {
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #606060;
 }
