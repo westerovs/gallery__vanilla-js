@@ -98,7 +98,8 @@ body {
     align-items: center;
     gap: 12px 0;
     min-width: 95px;
-    background: red;
+    max-height: 495px;
+    overflow-y: scroll;
 }
 
 /* ==================================== */
@@ -162,6 +163,13 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     outline: 2px dashed red;
+}
+
+.gallery__text {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #606060;
 }
 
 .gallery__qr-code {
