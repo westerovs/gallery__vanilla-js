@@ -21,7 +21,7 @@ class Gallery {
     }
 
     changeCoverImage = () => {
-        console.log(this.src)
+        console.log(777)
 
         this.galleryCoverMain.forEach(item => {
             if (item.classList.contains('is-active')) {
@@ -59,7 +59,6 @@ class Gallery {
         console.log(' gallery init')
         this.getImageSrc()
         this.elementClick()
-        this.getImageSrc()
     }
 }
 
