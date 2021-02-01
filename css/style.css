@@ -24,14 +24,6 @@
 */
 
 
-*,
-::before,
-::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 html,
 body {
     height: 100%;
@@ -41,19 +33,21 @@ body {
     color: #ccc;
 }
 
-a {
+.gallery a {
     text-decoration: none;
 }
 
-ul,
-li {
+.gallery ul,
+.gallery li {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-img {
+.img {
     max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    /*object-fit: cover;*/
 }
 
 /*безопасное скрытие элемента*/
@@ -69,30 +63,40 @@ img {
 }
 
 /* relative */
-.container {
+.gallery-container {
     position: relative;
-    margin: 50px auto;
-    width: 1200px;
+    margin-top: 150px;
+    width: 1400px;
     min-height: 400px;
     outline: 2px dashed gold;
 }
 
-.gallery__row {
+.gallery__main-content {
     outline: 2px dashed red;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+/* ==================================== */
+/* ======== Центральный cover ========= */
+/* ==================================== */
+
+.gallery__slider {
+    outline: 2px dashed red;
+    width: 750px;
+    height: 495px;
 }
 
 .gallery__cover {
-    outline: 2px dashed red;
-    width: 400px;
-    height: 400px;
+
 }
 
 .gallery__cover-list {
     display: flex;
     flex-direction: column;
-    gap: 20px 0;
+    width : 95px;
+    gap: 12px 0;
+    background: red;
 }
 
 .gallery__cover-item {
@@ -101,13 +105,35 @@ img {
     background: paleturquoise;
 }
 
-.gallery__slider-list {
-    display: flex;
-    justify-content: space-between;
+/* ==================================== */
+/* ======== Правый блок меню ========== */
+/* ==================================== */
+.gallery__content-desc {
+    width: 410px;
+    background: blue;
 }
 
-.gallery__slider-item {
-    width: 300px;
-    height: 200px;
+
+/* ==================================== */
+/* ======== нижний блок slider ======== */
+/* ==================================== */
+.gallery__card {
+    background: gray;
+}
+
+.gallery__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.gallery__card-item {
+    width: 355px;
+    min-height: 105px;
     background: blue;
+
+}
+
+.gallery__card-img {
+    outline: 2px solid black;
+    object-fit: cover;
 }

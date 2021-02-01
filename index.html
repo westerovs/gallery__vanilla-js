@@ -8,40 +8,65 @@
   <link rel="shortcut icon" href="#" type="image/x-icon">
   <title>Галерея</title>
   <link rel="stylesheet" href="css/style.css">
+	<script src="../../../../1.1_main_work/3_indoor-nav-tsum/modules/search/js/index.js"></script>
 </head>
 
 <body>
 
-<section class="gallery container">
-  <div class="gallery__row">
+<section class="gallery gallery-container">
+  <div class="gallery__main-content">
 
 		<ul class="gallery__cover-list">
-			<li class="gallery__cover-item"></li>
-			<li class="gallery__cover-item"></li>
+			<li class="gallery__cover-item">
+				<img class="gallery__cover-img" src="https://via.placeholder.com/95x70" width="95" height="70" alt="image">
+			</li>
+			<li class="gallery__cover-item">
+				<img class="gallery__cover-img" src="https://via.placeholder.com/95x70" width="95" height="70" alt="image">
+			</li>
 		</ul>
 
-		<figure class="gallery__cover">
-			<a href="#">
-				<img src="https://via.placeholder.com/150x100" alt="Интерьер">
-			</a>
-			<figcaption>Кафе 4 ЭТАЖ</figcaption>
-		</figure>
+		<div class="gallery__slider">
+			<figure class="gallery__cover">
+				<a>
+					<img src="https://via.placeholder.com/750x495" alt="Интерьер">
+				</a>
+				<figcaption>Кафе 4 ЭТАЖ</figcaption>
+			</figure>
+		</div>
+
 
 		<div class="gallery__content-desc">
-			<p class="gallery__text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum facere harum minus molestias
-				mollitia
-				natus quae tenetur vitae, voluptatem.
-			</p>
+			<nav class="gallery__nav">
+				<button class="gallery__nav-btn">Меню</button>
+				<button class="gallery__nav-btn">Забронировать лист</button>
+			</nav>
+			<div class="gallery__text-row">
+				<p class="gallery__text">
+					В кафе на четвертом этаже ЦУМа вашему вниманию - яичница с пшеничными блинчиками и красной икрой, свежий творог с клубникой и сметаной, а также различные мини-сэндвичи, в том числе с копченым лососем из нашей собственной коптильни. Хиты обеденного меню или ланча - знаменитый ЦУМбургер с говядиной, пельмени и различные виды пасты
+				</p>
+			</div>
+			<div class="gallery__qr-code">
+				<img src="https://via.placeholder.com/77x72" alt="qr code">
+				<p>Меню с собой</p>
+			</div>
 		</div>
 
   </div>
 
-	<div class="gallery__row">
-		<ul class="gallery__slider-list">
-			<li class="gallery__slider-item"></li>
-			<li class="gallery__slider-item"></li>
-			<li class="gallery__slider-item"></li>
+	<div class="gallery__card">
+		<ul class="gallery__card-list">
+			<li class="gallery__card-item">
+				<img class="gallery__card-img" src="https://via.placeholder.com/355x235" width="355" height="235" alt="image">
+				<p>Кафе 2 ЭТАЖ</p>
+			</li>
+			<li class="gallery__card-item">
+				<img class="gallery__card-img" src="https://via.placeholder.com/355x235" width="355" height="235" alt="image">
+				<p>Ресторан Buro TSUM</p>
+			</li>
+			<li class="gallery__card-item">
+				<img class="gallery__card-img" src="https://via.placeholder.com/355x235" width="355" height="235" alt="image">
+				<p>Кафе Глобус Гурмэ</p>
+			</li>
 		</ul>
 	</div>
 </section>
