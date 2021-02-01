@@ -29,7 +29,7 @@ body {
     height: 100%;
     font-size: 18px;
     font-family: Geometria, sans-serif;
-    background-color: #2c7580;
+    background-color: darkgray;
     color: #ccc;
 }
 
@@ -97,6 +97,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 12px 0;
+    min-width: 95px;
     background: red;
 }
 
@@ -201,6 +202,8 @@ body {
 .gallery__card-img {
     outline: 2px solid black;
     object-fit: cover;
+    min-width: 355px;
+    min-height: 235px;
 }
 
 .gallery__card-text {
