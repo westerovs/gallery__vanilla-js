@@ -3,6 +3,6 @@
 <br>
 🚀RUN code:
 <br>
-https://github.com/westerovs/gallery__vanilla-js/settings
+https://westerovs.github.io/gallery__vanilla-js/
 <br>
 <img src="cover.png">
